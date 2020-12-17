@@ -41,6 +41,7 @@ const camera = new THREE.PerspectiveCamera(75, canvas.Aspect(), 0.1, 1000);
 
 renderer.setSize(canvas.w, canvas.h);
 renderer.setClearColor(0x000000, 1.0);
+renderer.setPixelRatio(window.devicePixelRatio);
 
 camera.position.z = 5;
 

@@ -43,6 +43,7 @@ el_frame.appendChild(canvas)
 
 renderer.setSize(canvas_size.w, canvas_size.h);
 renderer.setClearColor(0x000000, 1.0);
+renderer.setPixelRatio(window.devicePixelRatio);
 
 camera.position.z = 5;
 

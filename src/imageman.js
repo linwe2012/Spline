@@ -113,7 +113,7 @@ export class ImageManger {
         if(this.current_pos === 0) {
             span = BeginingPrime(curveTau, vec[0], vec[1], vec[2])[0]
         }
-        else if(this.current_pos == vec.length-1) {
+        else if(this.current_pos === vec.length-1) {
             span = BeginingPrime(curveTau, vec[current_pos-2], vec[current_pos-1], vec[current_pos])[1].negate()
         }
         else {

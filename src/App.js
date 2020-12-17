@@ -17,6 +17,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
+import Link from '@material-ui/core/Link'
 
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
@@ -27,6 +28,7 @@ import Fab from '@material-ui/core/Fab';
 import DeleteIcon from '@material-ui/icons/Delete';
 
 import {Samplers} from './spline'
+import PersonalPage from './personal_page'
 
 const theTheme = createMuiTheme({
   palette: {
@@ -44,8 +46,7 @@ const useStyles = makeStyles(theme => ({
   paper: {
     padding: theme.spacing(3),
     // textAlign: 'center',
-    marginTop: theme.spacing(1),
-
+    marginTop: theme.spacing(1)
   },
   rawpaper: {
     padding: theme.spacing(3),
@@ -202,12 +203,19 @@ function App() {
                 <ExpansionPanelSummary
                   expandIcon={<ExpandMoreIcon />}
                 >
-                  <Typography className={classes.heading}>使用方法</Typography>
+                  <Typography className={classes.heading}>Manual</Typography>
                 </ExpansionPanelSummary>
-                <ExpansionPanelDetails>
+                <ExpansionPanelDetails style={{flexDirection:'column', textAlign:'left'}}>
+                  <Link href='https://en.wikipedia.org/wiki/Cubic_Hermite_spline'>
+                  Hermite Curve Interpolation
+                  </Link>
+                  <p></p>
                   <Typography>
-                    左侧任意点击创建点
-                     ，选中点拖拽重定位
+                    Click on the left to create a vertex, a line is automatically made when there are more than 2 vertices.
+                    </Typography>
+                    <p></p>
+                    <Typography>
+                    Click on white dots, hold and drag.
                     </Typography>
                   
                 </ExpansionPanelDetails>
@@ -340,8 +348,9 @@ function App() {
                 <Fab  aria-label="delete" color="secondary" className={classes.button} onClick={resetScene}>
                   <DeleteIcon />
                 </Fab >
-                
+                <PersonalPage />
               </div>
+              
             </Grid>
 
           </Grid>

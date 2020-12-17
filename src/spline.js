@@ -586,7 +586,7 @@ export class SplineGroup {
         }
         
         this.show_param = b
-        if(this.show_param == true) {
+        if(this.show_param === true) {
             for(let s of this.splines) {
                 s.ShowParam(this.param_sampler_name, 0, this.dotsGroup.children.length, this.global_gran)
             }
