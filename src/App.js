@@ -209,6 +209,9 @@ function App() {
                   <Link href='https://en.wikipedia.org/wiki/Cubic_Hermite_spline'>
                   Hermite Curve Interpolation
                   </Link>
+                  <Link href='https://github.com/linwe2012/Spline'>
+                  Source code on Github
+                  </Link>
                   <p></p>
                   <Typography>
                     Click on the left to create a vertex, a line is automatically made when there are more than 2 vertices.
