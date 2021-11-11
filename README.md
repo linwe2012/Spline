@@ -16,6 +16,21 @@ Try online demo yourself in Github pages: https://linwe2012.github.io/Spline
 Watch full demo online: https://youtu.be/9aBT-rlF9pE
 [![Gif Demo](https://j.gifs.com/5QDPOA.gif)](https://youtu.be/9aBT-rlF9pE)
 
+## Brief Description
+
+The Cardinal Splines algorithm will sample 4 points to generate a spline between the middle 2 points. The weight of 4 points are funtions defined over \[0, 1\]. The input to the function is the interval of the middle 2 points mapped to \[0, 1\].
+
+<img width="500px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HermiteBasis.svg/1200px-HermiteBasis.svg.png" />
+
+In the GUI, there are following adjustable parameters:
+
+- Tau: it adjust the tightness of the spline. The larger tau is, the corner will be less sharp.
+- Granularity: it change number of samples between 2 points.
+
+Finally, the splines can be parametrized, meaning that we split the spline evenly. This allows animated charaters to walk on the spline with a 
+uniform speed or with any speed function. Otherwise, they will walk slower when control points are closer and faste when control points are larger.
+
+In the implemnentation, each spline object contains full set of parameters. They can be animated between different tau values and parameterized seperately. The result are rendered with three.js for smooth animation. The user interface is created with React.js and MaterialUI.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
