@@ -11,7 +11,7 @@ This project is 1st course project for computer animations in ZJU.
 - Lab 2: [Free form deformation](https://github.com/linwe2012/FreeFormDeformation)
 - Lab 3: [Fuzzy Shape warp](https://github.com/linwe2012/FuzzyWarp)
 
-Try online demo yourself in Github pages: https://linwe2012.github.io/Spline
+**Try online demo yourself in Github pages: https://linwe2012.github.io/Spline**
 
 Watch full demo online: https://youtu.be/9aBT-rlF9pE
 [![Gif Demo](https://j.gifs.com/5QDPOA.gif)](https://youtu.be/9aBT-rlF9pE)
